@@ -8,14 +8,14 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if (num < 0 ) {
+   if (num > 0 ) {
       return ('Es positivo');
    }
-   else if (num > 0) {
-      return ('Es negativo')
+   else if (num < 0 ) {
+      return ('Es negativo');
    }
-   else if (num === 0) {
-      return false;
+   else {
+       return false;
    }
 }
 
@@ -56,14 +56,14 @@ function retornarPerimetro(lado) {
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
-   return( base * altura / 2)
+   return( base * altura / 2);
 }
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   return( euro  * 1.20 )
+   return( euro  * 1.20 );
 }
 
 function esVocal(letra) {
@@ -71,9 +71,21 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if( letra === ('a, e, i, o, u')){
+   if( letra === ('a')){
       return('Es vocal');
    }
+   if( letra === ('e')){
+         return('Es vocal')
+   }
+   if( letra === ('i')){
+      return('Es vocal')
+}
+if( letra === ('o')){
+   return('Es vocal')
+}
+if( letra === ('u')){
+   return('Es vocal')
+}
    else {
       return('Dato incorrecto');
    }
